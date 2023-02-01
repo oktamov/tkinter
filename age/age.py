@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter_project import *
 
 
 def calc_age():

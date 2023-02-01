@@ -1,5 +1,5 @@
 import speech_recognition as sr
-from tkinter import *
+from tkinter_project import *
 from gtts import gTTS
 import os
 from googletrans import Translator
