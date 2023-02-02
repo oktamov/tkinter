@@ -1,6 +1,6 @@
 import csv
 import os
-from tkinter_project import messagebox, END, Tk, Label, Entry, Button
+from tkinter import messagebox, END, Tk, Label, Entry, Button
 from datetime import datetime
 
 from person import Person
