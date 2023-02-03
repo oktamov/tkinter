@@ -1,7 +1,7 @@
 import csv
 import os
 from datetime import datetime
-from tkinter_project import messagebox, END, Tk, Label, Entry, Button, Radiobutton, StringVar
+from tkinter import messagebox, END, Tk, Label, Entry, Button, Radiobutton, StringVar
 from tkcalendar import DateEntry
 
 from student import Student
