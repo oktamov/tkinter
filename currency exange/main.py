@@ -14,11 +14,9 @@ def get_exchange_rate():
         result = float(result) * float(entry1.get(1.0, tk.END))
 
         entry2.delete(1.0, tk.END)
-        entry2.insert(tk.END, result)
+        entry2.insert(tk.END, str(result))
     except Exception:
-        messagebox.showerror("Error","\nNoto'gri kiritdingiz")
-
-
+        messagebox.showerror("Error", "\nNoto'gri kiritdingiz")
 
 
 root = tk.Tk()
