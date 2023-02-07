@@ -6,8 +6,6 @@ import requests
 
 def get_data():
     city = entry.get()
-    key1 = 'CquPBJVd8ethk04ibQ97XOP7Kg6HLKMd'
-    key2 = 'Sacxt5wjqSP4Hr8SRpmStCUO6Rp4u27H'
     url = f"https://api.tomorrow.io/v4/weather/forecast?location={city}&apikey='Sacxt5wjqSP4Hr8SRpmStCUO6Rp4u27H"
 
     headers = {"accept": "application/json"}
@@ -76,11 +74,11 @@ def window_show():
     temp_avg_txt.configure(text=get_daily_temperature()[0]['average_temperature'])
     for i in get_daily_temperature()[0]['hours']:
         if i.get('time') == "09:00":
-            morning_temp.configure(text=get_daily_temperature()[0]['hours'][0].get('temperature'))
+            morning_temp.configure(text=i.get('temperature'))
         if i.get('time') == "13:00":
-            afternoon_temp.configure(text=get_daily_temperature()[0]['hours'][0].get('temperature'))
+            afternoon_temp.configure(text=i.get('temperature'))
         if i.get('time') == "21:00":
-            night_temp.configure(text=get_daily_temperature()[0]['hours'][0].get('temperature'))
+            night_temp.configure(text=i.get('temperature'))
 
 
 window = Tk()
